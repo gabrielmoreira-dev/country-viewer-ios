@@ -19,16 +19,15 @@ final class CountryViewModel: CountryViewModeling {
         countryFactory.getDescription()
     }
     
-    private lazy var countryFactory: CountryFactoring = {
-        switch country {
-        case .usa:
-            return USACountryFactory()
-        case .canada:
-            return CanadaCountryFactory()
-        case .mexico:
-            return MexicoCountryFactory()
-        }
-    }()
+    private var countryFactory: CountryFactoring.Type {
+        registeredFactories.first { $0.canHandle(country) } ?? USACountryFactory.self
+    }
+    
+    private let registeredFactories: [CountryFactoring.Type] = [
+        USACountryFactory.self,
+        CanadaCountryFactory.self,
+        MexicoCountryFactory.self
+    ]
     
     init(country: Country) {
         self.country = country
