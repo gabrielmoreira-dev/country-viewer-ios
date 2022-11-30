@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0313C4E2936DD84009B1EB9 /* CountryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0313C4D2936DD84009B1EB9 /* CountryFactory.swift */; };
 		C042191629359AEE0016C3E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042191529359AEE0016C3E7 /* AppDelegate.swift */; };
 		C042191829359AEE0016C3E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042191729359AEE0016C3E7 /* SceneDelegate.swift */; };
 		C042191F29359AF40016C3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C042191E29359AF40016C3E7 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0313C4D2936DD84009B1EB9 /* CountryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFactory.swift; sourceTree = "<group>"; };
 		C042191229359AEE0016C3E7 /* CountryViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042191529359AEE0016C3E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C042191729359AEE0016C3E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0313C4C2936DC93009B1EB9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C0313C4D2936DD84009B1EB9 /* CountryFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		C042190929359AEE0016C3E7 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		C042194F29359C4A0016C3E7 /* Country */ = {
 			isa = PBXGroup;
 			children = (
+				C0313C4C2936DC93009B1EB9 /* Factory */,
 				C042195029359C530016C3E7 /* Model */,
 				C042195129359C740016C3E7 /* View */,
 				C042195229359C8A0016C3E7 /* ViewModel */,
@@ -305,6 +316,7 @@
 				C042196129359D940016C3E7 /* CountryViewController.swift in Sources */,
 				C042191829359AEE0016C3E7 /* SceneDelegate.swift in Sources */,
 				C042195C29359D040016C3E7 /* CountryViewModel.swift in Sources */,
+				C0313C4E2936DD84009B1EB9 /* CountryFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
